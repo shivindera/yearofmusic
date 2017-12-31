@@ -1,0 +1,124 @@
+body
+	background: #e9ebee;
+	display: inline-flex;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	padding: 30px;
+
+.left
+	display: block;
+	width: 75%;
+	overflow: hidden;
+	background: #a3bee5;
+	border-radius: 3px;
+	padding-bottom: 30px;
+	.name
+		position: relative;
+		font-size: 54px;
+		font-weight: 300;
+		margin: -20px 0 0;
+		text-align: center;
+		top: 40px;
+		left: -135px;
+	img
+		width: 720px;
+		max-width: 100%;
+		margin: auto;
+		display: block;
+	center
+		padding: 0 8%;
+		font-size: 18px;
+		font-weight: 500;
+		p
+			padding: 50px 70px 20px;
+			letter-spacing: .6px;
+			margin: 0;
+			&.second
+				padding: 0px 70px 50px;
+		.videoWrapper
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			padding-top: 25px;
+			height: 0;
+			iframe
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+.spacing
+	width: 3%;
+
+.right
+	flex: 1;
+	background: #FFF;
+	position: relative;
+	border-radius: 3px;
+	.list-head
+		font-size: 36px;
+		font-weight: 300;
+		margin: 0;
+		padding: 10px 20px;
+	.list
+		font-size: 12px;
+		font-weight: 300;
+		list-style: none;
+		margin: 0;
+		padding: 0 20px;
+		position: absolute;
+		top: 60px;
+		bottom: 10px;
+		left: 0;
+		right: 0;
+		overflow-y: scroll;
+		li
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding-bottom: 6px;
+			span
+				display: inline-block;
+				width: 50px;
+
+@media (max-width: 1024px)
+	body
+		padding: 15px;
+	.left
+		.name
+			margin: 10px 0 0;
+			top: 0px;
+			left: 0;
+			font-size: 36px;
+		img
+			width: 80%;
+		center
+			font-size: 14px;
+			padding: 0 20px;
+			p
+				padding: 20px 0;
+				&.second
+					padding: 0 0 20px;
+	.right
+		.list-head
+			font-size: 24px;
+
+@media (max-width: 640px)
+	body
+		padding: 0;
+		display: block;
+	.left
+		width: 100%;
+		.name
+			font-size: 30px;
+	.spacing
+		display: none;
+	.right
+		.list-head
+			text-align: center;
+		.list
+			position: relative;
+			top: 0;
+			bottom: 0;
+			padding-bottom: 20px;
